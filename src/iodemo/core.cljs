@@ -36,14 +36,14 @@
         "Input-file:"   [:input {:type     "file"
                                  :name     "infile"
                                  :id       "infile"
-                                 :on-click (fn [e] (println "loading-file!"))}]
+                                 :on-click (fn [e] (println "selecting-file!"))}]
         ;;actually execute the load
         "Load-File:"   [:input {:type "button"
                                 :name "load-file-button"
                                 :id   "load-file-button"
                                 :on-click (fn [e]
                                             (do (load-file! :source "infile"))
-                                            (println "loading-tad-db!!"))}]]])
+                                            (println "loading-file!!"))}]]])
 
 (defn app-body []
   (let []
